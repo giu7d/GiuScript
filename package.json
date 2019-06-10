@@ -1,0 +1,22 @@
+{
+  "name": "giuscript",
+  "version": "1.0.0",
+  "description": "A js compiled programming language",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --exec babel-node app.js",
+    "build": "babel src --out-dir dist",
+    "serve": "node dist/server.js"
+  },
+  "author": "Giuseppe Setem",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/node": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "eslint": "^5.16.0",
+    "nodemon": "^1.19.1"
+  }
+}
